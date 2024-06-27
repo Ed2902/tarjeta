@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Presentación</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #4b6cb7, #182848);
+        }
+
+        .card {
+            background: #000;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 20px 5px rgba(128, 0, 128, 0.6); /* Resplandor morado */
+            text-align: center;
+            width: 300px;
+            height: 650px; /* Incrementa la altura de la tarjeta */
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 200px;
+            height: auto;
+            animation: spin 10s linear infinite;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 90px;
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #aaa;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            height: 60px;
+            border-radius: 25px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn.whatsapp {
+            background-color: #25d366;
+        }
+
+        .btn.email {
+            background-color: #0072c6;
+        }
+
+        .btn.phone {
+            background-color: #34b7f1;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotateY(0deg);
+            }
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="logo">
+            <img src="./Genika.png" alt="Logo de la empresa">
+        </div>
+        <h1>Gina Paola Sanchez </h1>
+        <p>Gerente General</p>
+        <div class="buttons">
+            <a href="https://wa.me/+573182123378" class="btn whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="mailto:gsanchez@fastwaysas.com" class="btn email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="tel:+573182123378" class="btn phone">
+                <i class="fas fa-phone-alt"></i>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
